@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Player_Manager
 {
-    public class PlayerManager : MonoBehaviour
+    public class PlayerManager : PlayerData
     {
         public float speed;
 
@@ -15,11 +15,20 @@ namespace Player_Manager
         void Start()
         {
             rb = GetComponent<Rigidbody>();
+            this.LoadData();
         }
         void Update()
         {
+            Move();
+        }
+        void Move()
+        {
             Vector3 playerMove = playerController.Move();
             rb.AddForce(playerMove * speed);
+        }
+        void ClickObject()
+        {
+            
         }
     }
 }

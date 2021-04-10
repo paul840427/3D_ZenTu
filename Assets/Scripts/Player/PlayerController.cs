@@ -20,6 +20,15 @@ namespace Player_Manager
 
             return movement;
         }
+
+        //public GameObject mouseClick()
+        //{
+        //    if (Input.GetMouseButtonDown(1))
+        //    {
+
+        //    }
+        //    return 
+        //}
     }
 }
     
