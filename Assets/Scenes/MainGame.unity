@@ -169,6 +169,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aa5b6bae4cc2e64388f5b69d780f66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyStatus:
+    Level: 0
+    HP: 0
+    MP: 0
+    EXP: 0
+    ATK: 0
+    MATK: 0
+    STR: 0
+    INT: 0
+    VIT: 0
+    LUK: 0
   raycastPoint: {fileID: 686424532}
 --- !u!65 &170044479
 BoxCollider:
@@ -751,6 +762,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ca45ba629738ab4da6646189dd04121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerStatus:
+    Level: 0
+    HP: 0
+    MP: 0
+    EXP: 0
+    ATK: 0
+    MATK: 0
+    STR: 0
+    INT: 0
+    VIT: 0
+    LUK: 0
   speed: 5
 --- !u!54 &1640477656
 Rigidbody:
@@ -780,3 +802,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c27677b81460076459c8c6467e0c4f40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerStatus:
+    Level: 0
+    HP: 0
+    MP: 0
+    EXP: 0
+    ATK: 0
+    MATK: 0
+    STR: 0
+    INT: 0
+    VIT: 0
+    LUK: 0

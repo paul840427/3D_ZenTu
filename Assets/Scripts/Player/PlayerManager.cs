@@ -20,6 +20,7 @@ namespace Player_Manager
         void Update()
         {
             Move();
+            playerController.MouseRay();
         }
         void Move()
         {

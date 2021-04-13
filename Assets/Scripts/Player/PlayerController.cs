@@ -9,7 +9,7 @@ namespace Player_Manager
 
         void Update()
         {
-
+            
         }
         public Vector3 Move()
         {
@@ -20,7 +20,29 @@ namespace Player_Manager
 
             return movement;
         }
-
+        public Dictionary<string, Vector3> MouseRay()
+        {
+            Dictionary<string, Vector3> hitObject = new Dictionary<string, Vector3>();
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, 1000))
+            {
+                switch (hit.collider.name)
+                {
+                    case "Plane":
+                        return hitObject;
+                        break;
+                    case "Enemy":
+                        return hitObject;
+                        break;
+                    default:
+                        return hitObject;
+                        break;
+                }
+            }
+            else
+                return hitObject;
+        }
         //public GameObject mouseClick()
         //{
         //    if (Input.GetMouseButtonDown(1))

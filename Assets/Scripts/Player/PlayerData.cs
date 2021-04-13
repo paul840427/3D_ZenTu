@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerData : MonoBehaviour
 {
-    Property playerStatus = new Property();
+    public Property playerStatus = new Property();
     // Start is called before the first frame update
      void Start()
     {
